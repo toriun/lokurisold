@@ -1,0 +1,184 @@
+/* Code tidied up by ScrapBook */
+* { outline: medium none !important; }
+button { box-shadow: none !important; }
+body { font-family: "Open Sans",sans-serif; }
+img { max-width: 100%; height: auto; }
+b, strong { font-weight: 600; color: rgb(0, 0, 0); }
+.grecaptcha-badge { display: none !important; }
+h1, h2, h3, h4, h5, h6 { font-family: "PT Sans",sans-serif; font-weight: 700; color: rgb(77, 77, 77); transition: color 250ms ease 0s; }
+h1 { font-size: 28px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+a { color: rgb(0, 0, 0); transition: all 250ms ease 0s; }
+a:hover, a:hover h2, a:hover h3, a:hover h4 { color: rgb(242, 100, 25); }
+a:hover { text-decoration: none; }
+.lista_souhlas { display: none; background-color: rgb(250, 250, 250); position: fixed; bottom: 0px; left: 0px; z-index: 80000; width: 100%; max-width: 360px; padding: 30px 5px; border: 1px solid rgb(204, 204, 204); }
+section.lista_souhlas p { font-size: 13px; margin: 0px 0px 20px; }
+a.tlacitko { font-size: 13px; margin-top: 30px; display: inline-block; color: rgb(242, 100, 25); cursor: pointer; }
+a.tlacitko_empty { font-size: 14px; padding: 12px 25px; color: rgb(242, 100, 25); border-radius: 3px; border: 2px solid rgb(242, 100, 25); display: inline-block; height: 50px; text-align: center; }
+.section_title { margin-bottom: 30px; }
+.section_title h1, .section_title h2 { margin: 0px 0px 10px; line-height: 34px; }
+.start-header { opacity: 1; transform: translateY(0px); padding: 10px 0px; transition: all 0.3s ease-out 0s; }
+.start-header.scroll-on { padding: 10px 0px; transition: all 0.3s ease-out 0s; }
+.start-header.scroll-on .navbar-brand img { height: 28px; transition: all 0.3s ease-out 0s; }
+.navigation-wrap { position: fixed; width: 100%; top: 0px; left: 0px; z-index: 1000; transition: all 0.3s ease-out 0s; background-color: rgb(255, 255, 255); border-bottom: 2px solid rgb(246, 245, 241); }
+.navbar { padding: 0px; }
+.navbar-brand img { height: 28px; width: auto; display: inline-block; transition: all 0.3s ease-out 0s; vertical-align: middle; margin: -7px 5px 0px 0px; }
+.navbar-brand { display: inline-block; font-size: 16px; padding: 5px 0px; margin: 0px; vertical-align: middle; }
+.navbar-toggler { float: right; border: medium none; padding-right: 0px; }
+.navbar-toggler:active, .navbar-toggler:focus { outline: medium none; }
+.navbar-light .navbar-toggler-icon { width: 24px; height: 17px; background-image: none; position: relative; border-bottom: 1px solid rgb(0, 0, 0); transition: all 300ms linear 0s; }
+.navbar-light .navbar-toggler-icon::after, .navbar-light .navbar-toggler-icon::before { width: 24px; position: absolute; height: 1px; background-color: rgb(0, 0, 0); top: 0px; left: 0px; content: ""; z-index: 2; transition: all 300ms linear 0s; }
+.navbar-light .navbar-toggler-icon::after { top: 8px; }
+.nav-link { color: rgb(0, 0, 0) !important; font-weight: 500; transition: all 200ms linear 0s; }
+.nav-item:hover .nav-link { color: rgb(242, 100, 25) !important; }
+.nav-item.active .nav-link { color: rgb(242, 100, 25) !important; }
+.nav-link { position: relative; padding: 5px 0px !important; display: inline-block; font-size: 13px; font-weight: 600; }
+.nav-item { position: relative; transition: all 200ms linear 0s; margin-left: 2rem; }
+@media (max-width: 767px) {
+  .nav-item::after { display: none; }
+  .nav-item::before { display: none; }
+}
+.recipe_reviews { margin: 15px 0px 0px; display: block; }
+.recipe_reviews i { font-size: 14px; letter-spacing: -3px; }
+.recipe_reviews .hodnoceni_num { margin-left: 5px; font-size: 13px; }
+.recipe_reviews i.gray { color: rgb(204, 204, 204); }
+.recipe_reviews i.gold { color: rgb(242, 100, 25); }
+.recipe_ingredience, .recipe_postup, .ingredience_nakup { margin-bottom: 50px; }
+p.ingredience_info { margin: 30px 0px 0px; font-size: 14px; }
+footer { padding: 50px 0px 15px; margin-top: 150px; background-color: rgb(246, 245, 241); }
+.footer_logo { font-size: 18px; padding-bottom: 30px; }
+.footer_lower { border-top: 1px solid rgb(204, 204, 204); padding: 15px 0px; font-size: 14px; }
+.footer_lower p { display: inline-block; margin: 0px; }
+ul.footer_nav { display: inline-block; list-style: outside none none; padding: 0px; margin: 0px 0px 0px 15px; vertical-align: bottom; }
+ul.footer_nav li { border-left: 1px solid rgb(204, 204, 204); padding: 0px 15px; float: left; }
+ul.footer_nav li a { font-size: 13px; }
+.footer_logo img { height: 45px; margin-right: 5px; display: inline-block; vertical-align: middle; margin-top: -12px; }
+#mc_embed_signup input.email { font-size: 13px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(204, 204, 204) currentcolor rgb(204, 204, 204) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); box-sizing: border-box; height: 38px; padding: 3px 10px; display: inline-block; margin: 0px; width: 250px; outline: medium none !important; vertical-align: top; }
+#mc_embed_signup .button { font-size: 13px; color: rgb(255, 255, 255); background-color: rgb(242, 100, 25); box-sizing: border-box; height: 38px; border-radius: 0px; line-height: 32px; padding: 0px 18px; display: inline-block; margin: 0px 0px 0px -5px; transition: all 300ms ease 0s; outline: medium none !important; border: 1px solid rgb(242, 100, 25); }
+#mc_embed_signup .button:hover { color: rgb(255, 255, 255); background-color: rgb(255, 126, 58); border: 1px solid rgb(255, 126, 58); }
+#mc_embed_signup form { text-align: left; padding: 0px 0px 10px; }
+div#mc_embed_signup_scroll p { font-size: 13px; margin: 5px 0px 15px; }
+div#mc_embed_signup_scroll p a { font-size: 13px; text-decoration: underline; }
+div#mc_embed_signup_scroll p a:hover { text-decoration: none; }
+.newsletter_wrapper { float: right; padding-bottom: 30px; }
+.newsletter_title h3 { margin: 0px 0px 10px; }
+.newsletter_title p { font-size: 13px; }
+.zpet { margin: -50px 0px 75px; }
+.zpet.zpet_bottom { margin: 75px 0px 0px; }
+.zpet a { background-color: rgb(246, 245, 241); font-size: 13px; padding: 10px 20px; border-radius: 30px; vertical-align: middle; }
+.zpet a i { vertical-align: middle; font-size: 18px; }
+.zpet a:hover { color: rgb(0, 0, 0); }
+.ingredience_item { padding: 0px 15px 0px 0px; margin-bottom: 8px; }
+.ingredience_item .ingredience .mnozstvi { padding: 0px 5px 0px 0px; display: inline-block; font-size: 14px; }
+.recipe_stats { float: right; margin-top: 15px; }
+.recipe_stats p { float: left; margin-bottom: 0px; font-size: 14px; }
+.recipe_stats p:not(:first-child) { margin-left: 15px; }
+.recipe_stats p i { font-size: 20px; margin-right: 5px; vertical-align: middle; color: rgb(251, 88, 69); }
+.recipe_stats p i.icofont-soft-drinks { font-size: 22px; }
+span.title_badge { font-size: 12px; font-weight: 700; margin: 0px 0px 8px; display: inline-block; color: rgb(242, 100, 25); }
+span.title_badge:not(:last-child) { margin-right: 10px; }
+.ingredience_item .ingredience { font-size: 14px; }
+.recipe_postup ol { padding: 0px 0px 0px 18px; }
+.recipe_postup ol li { margin-bottom: 10px; font-size: 14px; }
+ul.login { position: relative; list-style: outside none none; padding: 0px; margin: 0px 0px 0px 30px; font-size: 13px; font-weight: 600; border-left: 2px solid rgb(242, 100, 25); }
+li.prihlasit > a { padding: 20px 0px 20px 20px; }
+li.prihlasit > a:hover { color: rgb(242, 100, 25); }
+.logovani { display: none; position: absolute; top: 38px; right: 0px; background-color: rgb(255, 255, 255); width: 280px; padding: 15px; box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2); z-index: 100; }
+.prihlasit:hover .logovani { display: block; }
+form#login .form-group:not(:last-child) { margin: 0px 0px 10px; }
+form#login label, .logovani_restore_pass form label { font-size: 13px; margin: 0px 0px 2px; font-weight: 400; }
+form#login input, .logovani_restore_pass form input { height: initial; border-radius: 0px; font-size: 13px; padding: 5px 8px; box-shadow: none !important; border: 1px solid rgb(204, 204, 204) !important; }
+form#login .tl_login, .logovani_restore_pass form button, .logovani_restore_pass .tl_back { font-size: 12px; color: rgb(255, 255, 255); background-color: rgb(242, 100, 25); box-sizing: border-box; border-radius: 0px; line-height: 32px; padding: 0px 25px; display: inline-block; margin: 10px 15px 0px 0px; transition: all 300ms ease 0s; outline: medium none !important; border: 1px solid rgb(242, 100, 25); }
+form#login .tl_login:hover, .logovani_restore_pass form button:hover, .logovani_restore_pass .tl_back:hover { color: rgb(255, 255, 255); background-color: rgb(255, 126, 58); }
+.header_login { margin-bottom: 10px; }
+.header_login h3 { float: left; font-size: 16px; }
+.header_login a.tl_text { float: right; }
+a.tl_text { font-size: 12px; font-weight: 400; color: rgb(0, 0, 0); text-decoration: underline; }
+form#login .tl_text, .logovani_restore_pass form .tl_text { float: right; margin: 18px 0px 10px; text-decoration: underline; }
+a.tl_text:hover, form#login .tl_text:hover, .logovani_restore_pass form .tl_text:hover { text-decoration: none; }
+form#login { padding-bottom: 15px; }
+.other_log_options { padding-top: 15px; border-top: 2px solid rgb(242, 100, 25); }
+section.lista_souhlas a.tlacitko_empty { font-size: 12px; padding: 8px 35px; color: rgb(242, 100, 25); border-radius: 3px; border: 2px solid rgb(242, 100, 25); height: initial; text-align: center; display: inline-block; float: right; }
+section.lista_souhlas a.tlacitko { float: left; margin: 10px 0px; }
+a#singin img { width: 25px; height: auto; border-radius: 100%; margin-right: 8px; }
+.blog_obsah p { font-size: 14px; }
+.blog_obsah ul, .blog_obsah ol { padding: 0px 0px 0px 20px; margin: 10px 0px 20px; }
+.blog_obsah ul li, .blog_obsah ol li { font-size: 14px; margin: 0px 0px 5px; }
+.social_share { margin: 50px 0px 0px; }
+.social_share a { font-size: 14px; }
+.social_share a i { font-size: 18px; vertical-align: middle; }
+.next_articles { margin: 100px 0px 0px; }
+.next_articles h3 { font-size: 24px; }
+.next_articles ul, .side_blog ul { padding: 0px 0px 0px 2px; list-style: outside none none; margin: 20px 0px 0px; }
+.next_articles ul li, .side_blog ul li { margin: 0px 0px 10px; padding: 0px 0px 0px 15px; position: relative; line-height: 16px; }
+.next_articles ul li a, .side_blog ul li a { font-size: 14px; line-height: 16px; display: inline-block; }
+.next_articles ul li::before, .side_blog ul li::before { content: ""; width: 2px; height: 100%; background-color: rgb(242, 100, 25); position: absolute; top: 50%; left: 0px; transform: translate(0px, -50%); }
+.blog_element { margin: 30px 0px; padding: 0px 0px 30px; border-bottom: 2px solid rgb(242, 100, 25); }
+.blog_element h2 { margin: 15px 0px 0px !important; }
+.blog_element .img_wrapper img { width: 100%; height: auto; }
+.blog_element .recipe_reviews i { font-size: 20px; letter-spacing: initial; }
+.blog_element .recipe_reviews { margin: 10px 0px 30px; }
+.blog_element .recipe_stats { margin: 10px 0px 30px; }
+.blog_element .ingredience_list, .blog_element .recipe_postup { margin-top: 30px; }
+.blog_element .ingredience_list h3, .blog_element .recipe_postup h3 { font-size: 18px; margin-bottom: 20px; margin-top: 0px; }
+.blog_element .dalsi_info { max-width: 280px; margin: 50px 0px 0px; }
+.blog_element .dalsi_info .tl_primary { font-size: 13px; color: rgb(242, 100, 25); font-weight: 600; background-color: transparent; box-sizing: border-box; border: 2px solid rgb(242, 100, 25); height: 40px; padding: 9px 0px; width: 100%; text-align: center; display: inline-block; margin: 0px; outline: medium none !important; transition: all 300ms ease 0s; }
+.blog_element .dalsi_info .tl_primary:hover { color: rgb(255, 255, 255); background-color: rgb(242, 100, 25); }
+.blog_obsah h2, .blog_obsah h3 { margin-top: 50px; margin-bottom: 15px; clear: both; }
+.blog_obsah h2 { font-size: 26px; }
+.blog_obsah h3 { font-size: 20px; margin-top: 30px; }
+section#blog_page { padding: 175px 0px 0px; }
+.blog_obsah .article_main_image img { margin-bottom: 30px; }
+a.tl_primary { font-size: 13px; color: rgb(255, 255, 255); background-color: rgb(242, 100, 25); box-sizing: border-box; border: 1px solid rgb(242, 100, 25); height: 50px; padding: 14px 0px; width: 100%; text-align: center; display: inline-block; margin: 0px; outline: medium none !important; }
+.img_wrapper { position: relative; overflow: hidden; }
+.img_wrapper img { transition: all 0.8s ease 0s; }
+.bg_light_grey { background-color: rgb(250, 250, 250); }
+.footer_social a { background-color: rgb(255, 255, 255); font-size: 20px; width: 40px; height: 38px; padding: 4px 5px; display: inline-block; text-align: center; border-radius: 100%; color: rgb(66, 103, 178); }
+@media screen and (max-width: 991px) {
+  .fluid_in_tab { width: 100%; max-width: initial; }
+  .navbar-toggler { float: right; margin: 2px 0px; }
+  .navigation-wrap { padding: 0px; }
+  ul.login.d-none.d-md-block { float: right; margin: 6px 0px 0px 30px; }
+  .start-header.scroll-on { padding: 0px; }
+  .navbar { padding: 10px 0px; display: block; }
+  .navbar-collapse .navbar-nav { padding: 30px 0px 15px !important; }
+  .nav-item { margin-left: 0px; margin-bottom: 8px; text-align: center; }
+  .nav-link { font-size: 14px; }
+  #mc_embed_signup input.email { width: 200px; }
+  .footer_logo { text-align: center; padding-bottom: 30px; }
+  .footer_social { text-align: center; margin-bottom: 50px; }
+  .newsletter_title { max-width: 500px; display: block; margin: 0px auto; text-align: center; }
+  .newsletter_wrapper { float: none; padding-bottom: 30px; max-width: 300px; margin: 30px auto 0px; }
+  #mc_embed_signup input.email { width: 210px; float: left; }
+  #mc_embed_signup .button { width: 90px; float: left; }
+}
+@media screen and (max-width: 767px) {
+  .zpet { margin: -30px 0px 75px; }
+  #mc_embed_signup .clear { display: inline-block; width: 90px; }
+  li.prihlasit > a { padding: 10px 0px; }
+  .navbar-toggler { position: absolute; right: 0px; top: 10px; }
+  ul.login.d-md-none { float: right; margin: 0px; border-left: 0px none; padding: 10px 0px; }
+  .recipe_stats { float: none; margin-top: 15px; }
+}
+@media screen and (max-width: 575px) {
+}
+@media screen and (max-width: 480px) {
+  .nav-item { margin-left: 0px; margin-bottom: 8px; text-align: left; padding-left: 5px !important; }
+  .footer_lower p { display: block; margin: 0px 0px 30px; text-align: center; }
+  ul.footer_nav { display: block; list-style: outside none none; padding: 0px; vertical-align: bottom; margin: 0px auto; }
+  ul.footer_nav li { border-left: medium none; padding: 0px 15px; float: none; text-align: center; margin-bottom: 5px; }
+  .recipe_reviews { margin: 10px 0px 15px; }
+  .recipe_stats { float: none; margin: 10px 0px 0px; }
+  .blog_element .recipe_reviews { margin: 10px 0px 15px; }
+  .blog_element .recipe_stats { margin: 10px 0px 0px; }
+}
+@media screen and (max-width: 380px) {
+  .navbar-brand { font-size: 14px; }
+  .navbar-toggler { right: 0px; }
+  li.prihlasit > a { padding: 20px 0px 20px 15px; }
+}
+@media screen and (max-width: 330px) {
+  #mc_embed_signup input.email { width: 200px; float: left; }
+  #mc_embed_signup .button { width: 85px; float: left; }
+}

@@ -1,0 +1,21 @@
+/* Code tidied up by ScrapBook */
+@font-face {
+  font-family: "IcoFont";
+  font-weight: 400;
+  src: url("icofont.woff2") format("woff2"), url("icofont.woff") format("woff");
+}
+[class*=" icofont-"], [class^="icofont-"] { font-family: IcoFont !important; font-style: normal; font-weight: 400; font-variant: normal; text-transform: none; white-space: nowrap; overflow-wrap: normal; direction: ltr; line-height: 1; }
+.icofont-rounded-left::before { content: ""; }
+.icofont-pie-alt::before { content: ""; }
+.icofont-soft-drinks::before { content: ""; }
+.icofont-facebook::before { content: ""; }
+.icofont-clock-time::before { content: ""; }
+.icofont-star::before { content: ""; }
+@keyframes icofont-spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+@keyframes icofont-spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
